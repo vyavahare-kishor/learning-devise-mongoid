@@ -10,5 +10,12 @@
   <%= @todo.notes %>
 </p>
 
+<p>
+  <strong>Comments:</strong>
+  <% @todo.comments.each do |comment| %>
+  		<%= comment.description %><br>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_todo_path(@todo) %> |
 <%= link_to 'Back', todos_path %>

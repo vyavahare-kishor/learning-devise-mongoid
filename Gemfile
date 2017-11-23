@@ -42,6 +42,7 @@ gem 'autoprefixer-rails'
 gem 'jquery-rails'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'active_model_serializers'
+gem 'pry'
 
 
 group :development, :test do

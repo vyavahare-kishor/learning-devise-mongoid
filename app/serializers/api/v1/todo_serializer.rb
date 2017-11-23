@@ -1,3 +1,4 @@
 class Api::V1::TodoSerializer < Api::V1::BaseSerializer
-	attributes :id, :title, :notes
+	attributes  :title, :notes
+	has_many :comments
 end
