@@ -43,11 +43,11 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '~>0.9.4'
 gem 'pry'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
-
+gem 'mongoid-serializer'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
