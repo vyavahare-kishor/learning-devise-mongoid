@@ -156,15 +156,4 @@ test:
           mode: :primary
         max_pool_size: 1
 
-production:
-  clients:
-    default:
-      database: learning_devise_mongoid_test
-      hosts:
-        - localhost:27017
-      options:
-        read:
-          mode: :primary
-        max_pool_size: 1
-
 
