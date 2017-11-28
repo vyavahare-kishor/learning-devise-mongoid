@@ -4,6 +4,12 @@
   <li><%= link_to 'New todo', new_todo_path %></li>
 </ul>
 <h1>Todos</h1>
+<%= form_for :term, url: todos_path, method: :get do |form| %>
+  <p>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
 <table class="table table-striped table-bordered">
   <thead>
     <tr>

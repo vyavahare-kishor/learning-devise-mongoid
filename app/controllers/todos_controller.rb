@@ -4,7 +4,11 @@ class TodosController < ApplicationController
   # GET /todos
   # GET /todos.json
   def index
-    @todos = Todo.all
+    if params[:term].nil?
+      @todos = Todo.all
+    else
+      @todos = Todo.search(params[:term]).records
+    end
   end
 
   # GET /todos/1
